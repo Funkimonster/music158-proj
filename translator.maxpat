@@ -40,12 +40,26 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
+					"id" : "obj-7",
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 337.0, 379.0, 263.0, 34.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
 					"id" : "obj-4",
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 67.0, 92.0, 150.0, 30.0 ]
+					"patching_rect" : [ 67.0, 80.0, 315.0, 32.0 ],
+					"text" : "/saron = /line1 + /line2 + /line3 + /line4"
 				}
 
 			}
@@ -95,7 +109,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 67.0, 31.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -112,6 +126,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
