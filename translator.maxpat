@@ -38,15 +38,27 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
-					"id" : "obj-7",
-					"index" : 2,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 418.0, 45.0, 30.0, 30.0 ],
-					"style" : ""
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"maxclass" : "o.expr.codebox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 67.0, 92.0, 150.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 113.0, 365.0, 150.0, 48.0 ],
+					"style" : "",
+					"text" : "Output bundle containing melody lines for every instrument"
 				}
 
 			}
@@ -56,46 +68,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 453.0, 45.0, 48.0, 20.0 ],
+					"patching_rect" : [ 176.0, 49.0, 150.0, 20.0 ],
 					"style" : "",
-					"text" : "Click\n"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 71.0, 148.0, 269.0, 62.0 ],
-					"style" : "",
-					"text" : "Rule for the Gong: \nPlay the 4th note of every line\nPlay Big Gong after the last note of the melody (Treat Big Gong as a separate instrument?)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 176.0, 312.0, 150.0, 20.0 ],
-					"style" : "",
-					"text" : "Playback Signal Out"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 141.0, 45.0, 47.0, 20.0 ],
-					"style" : "",
-					"text" : "Phase"
+					"text" : "Melody Input"
 				}
 
 			}
@@ -107,7 +82,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 89.0, 307.0, 30.0, 30.0 ],
+					"patching_rect" : [ 67.0, 370.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -121,13 +96,27 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 89.0, 45.0, 30.0, 30.0 ],
+					"patching_rect" : [ 67.0, 31.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
 			}
  ],
-		"lines" : [  ]
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+ ]
 	}
 
 }
