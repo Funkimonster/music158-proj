@@ -82,7 +82,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 89.0, 45.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -91,13 +91,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 70.0, 148.0, 269.0, 62.0 ],
+					"patching_rect" : [ 70.0, 148.0, 269.0, 74.0 ],
 					"style" : "",
-					"text" : "Rule for the Kenong: \nPlay the 8th note of every line\nPlay + on the odd notes (1, 3, 5, 7)\nPlay - on 2nd and 6th note"
+					"text" : "Rule for the Kenong: \nPlay the 8th note of every line\nPlay p on the odd notes (1, 3, 5, 7)\nPlay t on 2nd and 6th note\ngong in here too"
 				}
 
 			}
