@@ -38,12 +38,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 94.0, 71.0, 158.0, 22.0 ],
+					"style" : "",
+					"text" : "cnmat.o.gui.table /sarontest"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 94.0, 280.0, 149.0, 22.0 ],
+					"patching_rect" : [ 94.0, 281.0, 149.0, 22.0 ],
 					"style" : "",
 					"text" : "cnmat.o.gui.table /bonang"
 				}
@@ -71,7 +84,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 94.0, 58.0, 30.0, 30.0 ],
+					"patching_rect" : [ 94.0, 23.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -179,6 +192,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
@@ -186,7 +206,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -204,10 +224,10 @@
 , 			{
 				"name" : "music+computing_highlight_bright_sz12",
 				"default" : 				{
-					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ],
 					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ],
+					"fontname" : [ "Helvetica Neue" ]
 				}
 ,
 				"parentstyle" : "",
@@ -216,10 +236,10 @@
 , 			{
 				"name" : "music+computing_highlight_dark_sz12",
 				"default" : 				{
-					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ],
 					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ],
+					"fontname" : [ "Helvetica Neue" ]
 				}
 ,
 				"parentstyle" : "",
@@ -256,9 +276,9 @@
 , 			{
 				"name" : "music+computing_title_section",
 				"default" : 				{
-					"fontname" : [ "Arial Bold Italic" ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 18.0 ]
+					"fontsize" : [ 18.0 ],
+					"fontname" : [ "Arial Bold Italic" ]
 				}
 ,
 				"parentstyle" : "",
@@ -266,16 +286,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection",
-				"comment" : 				{
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+				"default" : 				{
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ]
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
-				"default" : 				{
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ],
+				"comment" : 				{
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ]
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
