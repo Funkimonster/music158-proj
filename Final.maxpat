@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1468.0, 713.0 ],
+		"rect" : [ 26.0, 85.0, 1468.0, 704.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -179,7 +179,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 387.0, 510.25, 182.0, 32.0 ],
-					"text" : "/bigduration = 10000"
+					"text" : "/bigduration = 60000"
 				}
 
 			}
@@ -1332,7 +1332,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 407.0, 735.015625, 217.0, 144.0 ],
+					"patching_rect" : [ 407.0, 735.015625, 220.0, 144.0 ],
 					"style" : "",
 					"text" : "Saron and Demung are melody intruments. Demung is like the bass. \nGong and Kenong are caltonics, accenting the ends of measures/lines/phrases\nPeking accents the melody by doubling each note \nSaron2 and Bonang do complex elaborations on the melody, each playing 4 notes per melody note."
 				}
@@ -1466,7 +1466,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 788.375, 718.0, 276.0, 279.0 ],
-					"text" : "/line4 : [0, 0, 0, 0, 0, 0, 0, 0],\n/line3 : [0, 0, 0, 0, 0, 0, 0, 0],\n/line2 : [0, 0, 0, 0, 0, 0, 0, 0],\n/line1 : [0, 0, 0, 0, 0, 0, 0, 0],\n/amp/x : [0., 0.037234, 0.0585106, 0.0797872, 0.0921987, 0.109929, 0.159574, 0.281915, 0.386525, 0.388298, 0.429078, 0.453901, 0.48227, 0.549646, 0.613475, 0.647163, 0.679078, 0.79078, 0.858156, 0.888298, 0.941489, 1.],\n/amp/y : [0.153333, 1., 0.913333, 0.993333, 0.935556, 0.353333, 0.513333, 0.34, 0.437778, 0.384444, 0.58, 0.433333, 0.597778, 0.406667, 0.553333, 0.331111, 0.535555, 0.304444, 0.411111, 0.273333, 0.26, 0.],\n/amp/count : 1"
+					"text" : "/line4 : [4, 3, 2, 3, 4, 5, 3, 4],\n/line3 : [6, 4, 5, 6, 3, 2, 1, 0],\n/line2 : [2, 1, 2, 0, 2, 1, 5, 4],\n/line1 : [2, 1, 2, 0, 2, 1, 5, 4],\n/amp/x : [0., 0.037234, 0.0585106, 0.0797872, 0.0921987, 0.109929, 0.159574, 0.281915, 0.386525, 0.388298, 0.429078, 0.453901, 0.48227, 0.549646, 0.613475, 0.647163, 0.679078, 0.79078, 0.858156, 0.888298, 0.941489, 1.],\n/amp/y : [0.153333, 1., 0.913333, 0.993333, 0.935556, 0.353333, 0.513333, 0.34, 0.437778, 0.384444, 0.58, 0.433333, 0.597778, 0.406667, 0.553333, 0.331111, 0.535555, 0.304444, 0.411111, 0.273333, 0.26, 0.],\n/amp/count : 1"
 				}
 
 			}
@@ -1894,15 +1894,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"order" : 1,
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
-					"order" : 0,
 					"source" : [ "obj-29", 0 ]
 				}
 

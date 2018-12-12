@@ -43,9 +43,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 94.0, 71.0, 158.0, 22.0 ],
+					"patching_rect" : [ 94.0, 71.0, 165.0, 22.0 ],
 					"style" : "",
-					"text" : "cnmat.o.gui.table /sarontest"
+					"text" : "cnmat.o.gui.table /sarontest9"
 				}
 
 			}
@@ -224,10 +224,10 @@
 , 			{
 				"name" : "music+computing_highlight_bright_sz12",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ],
+					"fontname" : [ "Helvetica Neue" ],
 					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ],
-					"fontname" : [ "Helvetica Neue" ]
+					"fontface" : [ 1 ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -236,10 +236,10 @@
 , 			{
 				"name" : "music+computing_highlight_dark_sz12",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ],
+					"fontname" : [ "Helvetica Neue" ],
 					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ],
-					"fontname" : [ "Helvetica Neue" ]
+					"fontface" : [ 1 ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -276,9 +276,9 @@
 , 			{
 				"name" : "music+computing_title_section",
 				"default" : 				{
+					"fontname" : [ "Arial Bold Italic" ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 18.0 ],
-					"fontname" : [ "Arial Bold Italic" ]
+					"fontsize" : [ 18.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -286,16 +286,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection",
-				"default" : 				{
+				"comment" : 				{
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
+					"fontsize" : [ 15.0 ]
 				}
 ,
-				"comment" : 				{
+				"default" : 				{
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"fontsize" : [ 15.0 ]
 				}
 ,
 				"parentstyle" : "",
