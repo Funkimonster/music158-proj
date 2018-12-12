@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 1468.0, 713.0 ],
+		"rect" : [ 42.0, 85.0, 1468.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -87,7 +87,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 387.0, 508.0, 150.0, 32.0 ],
-					"text" : "/duration = 40000"
+					"text" : "/duration = 80000"
 				}
 
 			}

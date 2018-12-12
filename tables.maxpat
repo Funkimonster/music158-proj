@@ -38,13 +38,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 94.0, 280.0, 149.0, 22.0 ],
+					"style" : "",
+					"text" : "cnmat.o.gui.table /bonang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
 					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 94.0, 291.0, 30.0, 30.0 ],
+					"patching_rect" : [ 94.0, 332.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -57,7 +70,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 94.0, 58.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -145,7 +158,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -154,6 +167,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
