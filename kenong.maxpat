@@ -38,6 +38,68 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 405.0, 241.0, 94.0, 22.0 ],
+					"style" : "",
+					"text" : "o.route /kenong"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-11",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 246.0, 317.0, 56.0, 22.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"linecount" : 16,
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 315.0, 221.5, 291.0, 238.0 ],
+					"text" : "/x : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63],\n/y : [7, 1, 2, 1, 10, 1, 2, 1, 7, 1, 2, 1, 11, 1, 2, 1, 7, 1, 2, 1, 12, 1, 2, 1, 7, 1, 2, 1, 13, 1, 2, 1, 7, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999, -999],\n/count : 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 449.0, 104.0, 56.0, 22.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 10.0,
 					"id" : "obj-49",
@@ -46,10 +108,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 7.0, 121.0, 165.0, 67.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 60, 47, 102, 105, 108, 101, 47, 110, 97, 109, 101, 0, 0, 44, 115, 0, 0, 126, 47, 68, 111, 99, 117, 109, 101, 110, 116, 115, 47, 77, 101, 103, 104, 110, 97, 68, 97, 118, 105, 100, 70, 105, 110, 97, 108, 47, 115, 97, 109, 112, 108, 101, 115, 47, 107, 101, 110, 111, 110, 103, 0, 0, 0, 0, 24, 47, 102, 105, 108, 101, 47, 116, 121, 112, 101, 0, 0, 44, 115, 0, 0, 102, 111, 108, 100, 0, 0, 0, 0, 0, 0, 0, 20, 47, 110, 117, 109, 118, 111, 105, 99, 101, 115, 0, 0, 44, 105, 0, 0, 0, 0, 0, 3 ],
-					"saved_bundle_length" : 132,
-					"text" : "/file/name : \"~/Documents/MeghnaDavidFinal/samples/kenong\",\n/file/type : \"fold\",\n/numvoices : 3"
+					"patching_rect" : [ 7.0, 121.0, 171.0, 67.0 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 47, 102, 105, 108, 101, 47, 110, 97, 109, 101, 0, 0, 44, 115, 0, 0, 126, 47, 68, 111, 99, 117, 109, 101, 110, 116, 115, 47, 77, 101, 103, 104, 110, 97, 68, 97, 118, 105, 100, 70, 105, 110, 97, 108, 47, 115, 97, 109, 112, 108, 101, 115, 47, 107, 101, 110, 111, 110, 103, 47, 0, 0, 0, 0, 0, 0, 0, 24, 47, 102, 105, 108, 101, 47, 116, 121, 112, 101, 0, 0, 44, 115, 0, 0, 102, 111, 108, 100, 0, 0, 0, 0, 0, 0, 0, 20, 47, 110, 117, 109, 118, 111, 105, 99, 101, 115, 0, 0, 44, 105, 0, 0, 0, 0, 0, 32 ],
+					"saved_bundle_length" : 136,
+					"text" : "/file/name : \"~/Documents/MeghnaDavidFinal/samples/kenong/\",\n/file/type : \"fold\",\n/numvoices : 32"
 				}
 
 			}
@@ -109,20 +171,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 10.0,
-					"id" : "obj-105",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 177.0, 273.5, 28.0, 20.0 ],
-					"style" : "",
-					"text" : "-~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "scope~",
 					"numinlets" : 2,
@@ -167,7 +215,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-7",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -205,11 +253,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 92.0, 29.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -244,7 +292,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -271,7 +319,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
+					"destination" : [ "obj-11", 0 ],
 					"order" : 0,
 					"source" : [ "obj-103", 0 ]
 				}
@@ -296,7 +344,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-103", 0 ]
 				}
 
@@ -304,7 +352,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-98", 8 ],
-					"source" : [ "obj-105", 0 ]
+					"order" : 1,
+					"source" : [ "obj-103", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -319,6 +375,23 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-103", 2 ],
+					"order" : 1,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"order" : 2,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -353,123 +426,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "cnmat.o.phase.points~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
-				"patcherrelativepath" : "../Max 7/Packages/Music-and-Computing/patchers/signal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"patcherrelativepath" : "../Max 7/Packages/Music-and-Computing/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "phase.points2.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/code",
-				"patcherrelativepath" : "../Max 7/Packages/Music-and-Computing/code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"patcherrelativepath" : "../Max 7/Packages/Music-and-Computing/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.deferlow.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/internal",
-				"patcherrelativepath" : "../Max 7/Packages/Music-and-Computing/patchers/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat.phase.click~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/signal",
-				"patcherrelativepath" : "../Max 7/Packages/Music-and-Computing/patchers/signal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "delta.click3.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/code",
-				"patcherrelativepath" : "../Max 7/Packages/Music-and-Computing/code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.granubuf~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/patchers/sound-engines/samples",
-				"patcherrelativepath" : "../Max 7/Packages/Music-and-Computing/patchers/sound-engines/samples",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "granubuf.pan.gendsp",
-				"bootpath" : "~/Documents/Max 7/Packages/Music-and-Computing/code",
-				"patcherrelativepath" : "../Max 7/Packages/Music-and-Computing/code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.expr.codebox.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.collect.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.if.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.route.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.union.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.select.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.pack.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.cond.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.prepend.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.var.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.display.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.compose.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "o.change.mxe64",
-				"type" : "mx64"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "music+computing_highlight_black_sz12",
 				"default" : 				{
