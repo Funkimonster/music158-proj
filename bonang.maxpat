@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 617.0, 63.0, 640.0, 480.0 ],
+		"rect" : [ 617.0, 85.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,29 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
+					"comment" : "",
+					"id" : "obj-19",
+					"index" : 2,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 141.0, 403.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-18",
+					"linecount" : 2,
+					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 408.0, 241.0, 101.0, 22.0 ],
-					"style" : "",
-					"text" : "o.route /bonang"
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 439.0, 186.5, 150.0, 46.0 ],
+					"text" : "/duration = /bigduration / 64"
 				}
 
 			}
@@ -61,36 +76,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 246.0, 317.0, 56.0, 22.0 ],
-					"sig" : 0.0,
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-13",
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 345.0, 305.0, 291.0, 34.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-9",
-					"maxclass" : "number~",
-					"mode" : 2,
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 449.0, 104.0, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -218,7 +203,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 418.0, 45.0, 30.0, 30.0 ],
+					"patching_rect" : [ 439.0, 45.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -226,13 +211,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 453.0, 45.0, 48.0, 47.0 ],
+					"patching_rect" : [ 323.0, 50.0, 80.0, 20.0 ],
 					"style" : "",
-					"text" : "num duration"
+					"text" : "click duration"
 				}
 
 			}
@@ -242,7 +226,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 141.0, 397.0, 150.0, 20.0 ],
+					"patching_rect" : [ 69.0, 445.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Playback Signal Out"
 				}
@@ -268,7 +252,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 94.25, 392.0, 30.0, 30.0 ],
+					"patching_rect" : [ 92.0, 403.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -294,7 +278,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.0, 409.0, 274.0, 47.0 ],
+					"patching_rect" : [ 301.0, 366.0, 274.0, 48.0 ],
 					"style" : "",
 					"text" : "Rule for the Bonang: \nPlay a special alternation pattern based on each 4-note measure"
 				}
@@ -350,15 +334,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-12", 0 ]
+					"destination" : [ "obj-103", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-103", 0 ],
-					"source" : [ "obj-14", 0 ]
+					"destination" : [ "obj-98", 0 ],
+					"midpoints" : [ 448.5, 303.0, 102.0, 303.0, 102.0, 315.0, 101.5, 315.0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -380,15 +365,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"order" : 2,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -418,6 +395,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-98", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-98", 0 ]
 				}
@@ -436,10 +420,10 @@
 , 			{
 				"name" : "music+computing_highlight_bright_sz12",
 				"default" : 				{
-					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ],
 					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"fontname" : [ "Helvetica Neue" ],
+					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -448,10 +432,10 @@
 , 			{
 				"name" : "music+computing_highlight_dark_sz12",
 				"default" : 				{
-					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ],
 					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"fontname" : [ "Helvetica Neue" ],
+					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -488,9 +472,9 @@
 , 			{
 				"name" : "music+computing_title_section",
 				"default" : 				{
-					"fontname" : [ "Arial Bold Italic" ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 18.0 ]
+					"fontsize" : [ 18.0 ],
+					"fontname" : [ "Arial Bold Italic" ]
 				}
 ,
 				"parentstyle" : "",
@@ -498,16 +482,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection",
-				"default" : 				{
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ],
+				"comment" : 				{
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ]
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
-				"comment" : 				{
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+				"default" : 				{
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ]
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

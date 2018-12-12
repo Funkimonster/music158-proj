@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 749.0, 56.0, 640.0, 480.0 ],
+		"rect" : [ 749.0, 85.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-14",
+					"index" : 2,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 134.0, 392.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 405.0, 241.0, 97.0, 22.0 ],
+					"patching_rect" : [ 433.0, 142.0, 97.0, 22.0 ],
 					"style" : "",
 					"text" : "o.route /biggong"
 				}
@@ -71,28 +84,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-13",
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 345.0, 305.0, 291.0, 34.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-9",
-					"maxclass" : "number~",
-					"mode" : 2,
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 449.0, 104.0, 56.0, 22.0 ],
-					"sig" : 0.0,
-					"style" : ""
+					"patching_rect" : [ 433.0, 183.0, 149.0, 61.0 ],
+					"text" : "/x : [0, 1],\n/y : [1, 1],\n/count : 1"
 				}
 
 			}
@@ -107,9 +105,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7.0, 121.0, 171.0, 67.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 47, 102, 105, 108, 101, 47, 110, 97, 109, 101, 0, 0, 44, 115, 0, 0, 126, 47, 68, 111, 99, 117, 109, 101, 110, 116, 115, 47, 77, 101, 103, 104, 110, 97, 68, 97, 118, 105, 100, 70, 105, 110, 97, 108, 47, 115, 97, 109, 112, 108, 101, 115, 47, 98, 105, 103, 103, 111, 110, 103, 47, 0, 0, 0, 0, 0, 0, 24, 47, 102, 105, 108, 101, 47, 116, 121, 112, 101, 0, 0, 44, 115, 0, 0, 102, 111, 108, 100, 0, 0, 0, 0, 0, 0, 0, 20, 47, 110, 117, 109, 118, 111, 105, 99, 101, 115, 0, 0, 44, 105, 0, 0, 0, 0, 0, 32 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 47, 102, 105, 108, 101, 47, 110, 97, 109, 101, 0, 0, 44, 115, 0, 0, 126, 47, 68, 111, 99, 117, 109, 101, 110, 116, 115, 47, 77, 101, 103, 104, 110, 97, 68, 97, 118, 105, 100, 70, 105, 110, 97, 108, 47, 115, 97, 109, 112, 108, 101, 115, 47, 98, 105, 103, 103, 111, 110, 103, 47, 0, 0, 0, 0, 0, 0, 24, 47, 102, 105, 108, 101, 47, 116, 121, 112, 101, 0, 0, 44, 115, 0, 0, 102, 111, 108, 100, 0, 0, 0, 0, 0, 0, 0, 20, 47, 110, 117, 109, 118, 111, 105, 99, 101, 115, 0, 0, 44, 105, 0, 0, 0, 0, 0, 2 ],
 					"saved_bundle_length" : 136,
-					"text" : "/file/name : \"~/Documents/MeghnaDavidFinal/samples/biggong/\",\n/file/type : \"fold\",\n/numvoices : 32"
+					"text" : "/file/name : \"~/Documents/MeghnaDavidFinal/samples/biggong/\",\n/file/type : \"fold\",\n/numvoices : 2"
 				}
 
 			}
@@ -218,7 +216,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 418.0, 45.0, 30.0, 30.0 ],
+					"patching_rect" : [ 433.0, 45.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -226,13 +224,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 453.0, 45.0, 48.0, 47.0 ],
+					"patching_rect" : [ 345.0, 38.0, 61.0, 34.0 ],
 					"style" : "",
-					"text" : "num duration"
+					"text" : "click duration"
 				}
 
 			}
@@ -243,7 +241,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.5, 377.0, 269.0, 60.0 ],
+					"patching_rect" : [ 298.5, 377.0, 269.0, 62.0 ],
 					"style" : "",
 					"text" : "Rule for the Gong: \nPlay the 4th note of every line\nPlay Big Gong after the last note of the melody (Treat Big Gong as a separate instrument?)"
 				}
@@ -255,7 +253,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 141.0, 397.0, 150.0, 20.0 ],
+					"patching_rect" : [ 81.0, 433.0, 127.0, 20.0 ],
 					"style" : "",
 					"text" : "Playback Signal Out"
 				}
@@ -281,7 +279,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 94.25, 392.0, 30.0, 30.0 ],
+					"patching_rect" : [ 92.0, 392.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -381,14 +379,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"order" : 2,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
 					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -418,6 +408,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-98", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-98", 0 ]
 				}
@@ -436,10 +433,10 @@
 , 			{
 				"name" : "music+computing_highlight_bright_sz12",
 				"default" : 				{
-					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ],
 					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"fontname" : [ "Helvetica Neue" ],
+					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -448,10 +445,10 @@
 , 			{
 				"name" : "music+computing_highlight_dark_sz12",
 				"default" : 				{
-					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ],
 					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"fontname" : [ "Helvetica Neue" ],
+					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -488,9 +485,9 @@
 , 			{
 				"name" : "music+computing_title_section",
 				"default" : 				{
-					"fontname" : [ "Arial Bold Italic" ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 18.0 ]
+					"fontsize" : [ 18.0 ],
+					"fontname" : [ "Arial Bold Italic" ]
 				}
 ,
 				"parentstyle" : "",
@@ -498,16 +495,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection",
-				"default" : 				{
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ],
+				"comment" : 				{
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ]
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
-				"comment" : 				{
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+				"default" : 				{
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ]
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

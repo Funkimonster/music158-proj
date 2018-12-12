@@ -38,14 +38,54 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-18",
+					"linecount" : 2,
+					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 411.0, 206.0, 90.0, 22.0 ],
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 435.0, 107.0, 150.0, 46.0 ],
+					"text" : "/duration = /bigduration / 64"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-1",
+					"index" : 2,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 140.0, 348.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 87.0, 389.0, 127.0, 20.0 ],
 					"style" : "",
-					"text" : "o.route /peking"
+					"text" : "Playback Signal Out"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-2",
+					"index" : 1,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 98.0, 348.0, 30.0, 30.0 ],
+					"style" : ""
 				}
 
 			}
@@ -69,36 +109,6 @@
 , 			{
 				"box" : 				{
 					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-13",
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 351.0, 270.0, 291.0, 34.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-9",
-					"maxclass" : "number~",
-					"mode" : 2,
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 455.0, 69.0, 56.0, 22.0 ],
-					"sig" : 0.0,
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
 					"fontsize" : 10.0,
 					"id" : "obj-49",
 					"linecount" : 5,
@@ -107,9 +117,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 13.0, 86.0, 171.0, 67.0 ],
-					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 47, 102, 105, 108, 101, 47, 110, 97, 109, 101, 0, 0, 44, 115, 0, 0, 126, 47, 68, 111, 99, 117, 109, 101, 110, 116, 115, 47, 77, 101, 103, 104, 110, 97, 68, 97, 118, 105, 100, 70, 105, 110, 97, 108, 47, 115, 97, 109, 112, 108, 101, 115, 47, 112, 101, 107, 105, 110, 103, 47, 0, 0, 0, 0, 0, 0, 0, 24, 47, 102, 105, 108, 101, 47, 116, 121, 112, 101, 0, 0, 44, 115, 0, 0, 102, 111, 108, 100, 0, 0, 0, 0, 0, 0, 0, 20, 47, 110, 117, 109, 118, 111, 105, 99, 101, 115, 0, 0, 44, 105, 0, 0, 0, 0, 0, 32 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 47, 102, 105, 108, 101, 47, 110, 97, 109, 101, 0, 0, 44, 115, 0, 0, 126, 47, 68, 111, 99, 117, 109, 101, 110, 116, 115, 47, 77, 101, 103, 104, 110, 97, 68, 97, 118, 105, 100, 70, 105, 110, 97, 108, 47, 115, 97, 109, 112, 108, 101, 115, 47, 112, 101, 107, 105, 110, 103, 47, 0, 0, 0, 0, 0, 0, 0, 24, 47, 102, 105, 108, 101, 47, 116, 121, 112, 101, 0, 0, 44, 115, 0, 0, 102, 111, 108, 100, 0, 0, 0, 0, 0, 0, 0, 20, 47, 110, 117, 109, 118, 111, 105, 99, 101, 115, 0, 0, 44, 105, 0, 0, 0, 0, 0, 16 ],
 					"saved_bundle_length" : 136,
-					"text" : "/file/name : \"~/Documents/MeghnaDavidFinal/samples/peking/\",\n/file/type : \"fold\",\n/numvoices : 32"
+					"text" : "/file/name : \"~/Documents/MeghnaDavidFinal/samples/peking/\",\n/file/type : \"fold\",\n/numvoices : 16"
 				}
 
 			}
@@ -218,7 +228,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 424.0, 10.0, 30.0, 30.0 ],
+					"patching_rect" : [ 435.0, 10.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -226,25 +236,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 459.0, 10.0, 48.0, 47.0 ],
+					"patching_rect" : [ 340.0, 15.0, 93.0, 20.0 ],
 					"style" : "",
-					"text" : "num duration"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 147.0, 362.0, 150.0, 20.0 ],
-					"style" : "",
-					"text" : "Playback Signal Out"
+					"text" : "click duration"
 				}
 
 			}
@@ -263,25 +260,12 @@
 , 			{
 				"box" : 				{
 					"comment" : "",
-					"id" : "obj-2",
-					"index" : 1,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 100.25, 357.0, 30.0, 30.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
 					"id" : "obj-14",
 					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 95.0, 10.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -294,7 +278,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 186.0, 402.0, 269.0, 33.0 ],
+					"patching_rect" : [ 348.5, 300.0, 269.0, 34.0 ],
 					"style" : "",
 					"text" : "Rule for the Peking: \nPlay the melody with each note doubled"
 				}
@@ -350,15 +334,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-12", 0 ]
+					"destination" : [ "obj-103", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-103", 0 ],
-					"source" : [ "obj-14", 0 ]
+					"destination" : [ "obj-98", 0 ],
+					"midpoints" : [ 444.5, 267.0, 108.0, 267.0, 108.0, 279.0, 107.5, 279.0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -380,15 +365,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"order" : 2,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -418,6 +395,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-98", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-98", 0 ]
 				}
@@ -436,10 +420,10 @@
 , 			{
 				"name" : "music+computing_highlight_bright_sz12",
 				"default" : 				{
-					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ],
 					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"fontname" : [ "Helvetica Neue" ],
+					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -448,10 +432,10 @@
 , 			{
 				"name" : "music+computing_highlight_dark_sz12",
 				"default" : 				{
-					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ],
 					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"fontname" : [ "Helvetica Neue" ],
+					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -488,9 +472,9 @@
 , 			{
 				"name" : "music+computing_title_section",
 				"default" : 				{
-					"fontname" : [ "Arial Bold Italic" ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 18.0 ]
+					"fontsize" : [ 18.0 ],
+					"fontname" : [ "Arial Bold Italic" ]
 				}
 ,
 				"parentstyle" : "",
@@ -498,16 +482,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection",
-				"default" : 				{
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ],
+				"comment" : 				{
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ]
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
-				"comment" : 				{
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+				"default" : 				{
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ]
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

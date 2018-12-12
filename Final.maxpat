@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1468.0, 713.0 ],
+		"rect" : [ 26.0, 85.0, 1468.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "gain~",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 213.0, 968.0, 124.0, 19.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-77",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -46,18 +59,6 @@
 					"patching_rect" : [ 478.0, 544.5, 165.0, 34.0 ],
 					"style" : "",
 					"text" : "^ set to twice as long as you want the melody"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-53",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 174.0, 576.0, 100.0, 22.0 ],
-					"style" : ""
 				}
 
 			}
@@ -92,13 +93,12 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-47",
-					"linecount" : 2,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 387.0, 508.0, 146.0, 46.0 ],
-					"text" : "/bigduration = 30000"
+					"patching_rect" : [ 387.0, 510.25, 182.0, 32.0 ],
+					"text" : "/bigduration = 15000"
 				}
 
 			}
@@ -210,8 +210,8 @@
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 349.0, 907.0, 51.0, 22.0 ],
 					"style" : "",
 					"text" : "bonang"
@@ -223,8 +223,8 @@
 					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 280.0, 907.0, 47.0, 22.0 ],
 					"style" : "",
 					"text" : "saron2"
@@ -236,8 +236,8 @@
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 217.25, 907.0, 46.0, 22.0 ],
 					"style" : "",
 					"text" : "peking"
@@ -262,8 +262,8 @@
 					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 89.0, 907.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "kenong"
@@ -275,8 +275,8 @@
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 41.5, 907.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "gong"
@@ -1625,7 +1625,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.0, 995.0, 33.0, 22.0 ],
+					"patching_rect" : [ 198.0, 1067.0, 33.0, 22.0 ],
 					"style" : "",
 					"text" : "stop"
 				}
@@ -1638,7 +1638,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 104.75, 995.0, 74.0, 22.0 ],
+					"patching_rect" : [ 104.75, 1067.0, 74.0, 22.0 ],
 					"style" : "",
 					"text" : "startwindow"
 				}
@@ -1650,7 +1650,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 41.5, 1031.0, 37.0, 22.0 ],
+					"patching_rect" : [ 41.5, 1103.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "dac~"
 				}
@@ -1707,7 +1707,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 757.0, 640.0, 276.0, 75.0 ],
-					"text" : "/line4 : [0, 0, 0, 0, 0, 0, 0, 0],\n/line3 : [0, 0, 0, 0, 0, 0, 0, 0],\n/line2 : [2, 1, 2, 0, 2, 1, 5, 4],\n/line1 : [2, 1, 2, 0, 2, 1, 5, 4]"
+					"text" : "/line4 : [4, 3, 2, 3, 4, 5, 3, 4],\n/line3 : [6, 4, 5, 6, 3, 2, 1, 0],\n/line2 : [2, 1, 2, 0, 2, 1, 5, 4],\n/line1 : [2, 1, 2, 0, 2, 1, 5, 4]"
 				}
 
 			}
@@ -2247,7 +2247,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"midpoints" : [ 207.5, 1026.5, 51.0, 1026.5 ],
+					"midpoints" : [ 207.5, 1098.5, 51.0, 1098.5 ],
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -2255,23 +2255,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"midpoints" : [ 114.25, 1027.5, 51.0, 1027.5 ],
+					"midpoints" : [ 114.25, 1099.5, 51.0, 1099.5 ],
 					"source" : [ "obj-23", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 1 ],
-					"order" : 0,
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"order" : 1,
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -2285,8 +2276,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-26", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-27", 1 ]
 				}
 
 			}
@@ -2300,14 +2305,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-29", 0 ]
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-30", 0 ]
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-30", 1 ]
 				}
 
 			}
@@ -2315,6 +2320,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-31", 1 ]
 				}
 
 			}
@@ -2469,6 +2481,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-45", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
 					"source" : [ "obj-47", 0 ]
 				}
@@ -2563,6 +2582,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 1 ],
+					"source" : [ "obj-54", 0 ]
 				}
 
 			}
@@ -3872,8 +3898,8 @@
 , 			{
 				"name" : "music+computing_obj_electric-blue_int",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgcolor" : [ 0.12973, 0.745061, 0.987553, 1.0 ]
 				}
 ,
@@ -5889,16 +5915,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5906,16 +5932,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5923,16 +5949,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-1",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5940,16 +5966,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-1-1",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5957,16 +5983,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-1-1-1",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5974,16 +6000,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-1-1-1-1",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5991,16 +6017,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-1-2",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6008,16 +6034,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-1-3",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6025,16 +6051,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-1-4",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6042,16 +6068,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-2",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6059,16 +6085,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-3",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6076,16 +6102,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-4",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6093,16 +6119,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-4-1",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6110,16 +6136,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-5",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6127,16 +6153,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-1-6",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6144,16 +6170,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-2",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6161,16 +6187,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-2-1",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6178,16 +6204,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-2-2",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6195,16 +6221,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-2-3",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6212,16 +6238,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-3",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6229,16 +6255,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-3-1",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6246,16 +6272,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-3-2",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6263,16 +6289,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-3-3",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6280,16 +6306,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-3-4",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6297,16 +6323,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-3-5",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6314,16 +6340,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-4",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6331,16 +6357,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-4-1",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6348,16 +6374,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-5",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6365,16 +6391,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-6",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6382,16 +6408,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-7",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6399,16 +6425,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-8",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6416,16 +6442,16 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection-9",
-				"default" : 				{
-					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
-				}
-,
 				"comment" : 				{
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"default" : 				{
+					"fontface" : [ 3 ],
+					"fontsize" : [ 15.0 ],
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -9894,8 +9920,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
