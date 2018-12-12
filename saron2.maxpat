@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 375.0, 56.0, 1031.0, 810.0 ],
+		"rect" : [ 34.0, 77.0, 1468.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,9 +43,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 405.0, 242.0, 113.0, 22.0 ],
+					"patching_rect" : [ 405.0, 242.0, 85.0, 22.0 ],
 					"style" : "",
-					"text" : "o.route /saron2shift"
+					"text" : "o.route /saron"
 				}
 
 			}
@@ -203,9 +203,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 6,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 176.399994, 100.0, 268.0, 20.0 ],
+					"patching_rect" : [ 176.399994, 100.0, 250.0, 20.0 ],
 					"style" : "",
-					"text" : "cnmat.o.phase.points~ /saron2shift @step 1 @normal_x 1"
+					"text" : "cnmat.o.phase.points~ /saron2 @step 1 @normal_x 1"
 				}
 
 			}
@@ -230,7 +230,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 453.0, 46.0, 48.0, 47.0 ],
+					"patching_rect" : [ 453.0, 46.0, 48.0, 48.0 ],
 					"style" : "",
 					"text" : "num duration"
 				}
@@ -281,7 +281,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 89.0, 46.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -294,7 +294,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 309.0, 398.0, 275.0, 87.0 ],
+					"patching_rect" : [ 309.0, 398.0, 275.0, 89.0 ],
 					"style" : "",
 					"text" : "Rule for the Saron2: \nAssume Melody note is 2.\nLeading up to the note, play 3, 2, 1, (2).\nNeighbor, Note, Neighbor, Note, where the fourth note coincides with the melody note. The downbeat is at the end."
 				}
@@ -498,14 +498,14 @@
 			}
 , 			{
 				"name" : "music+computing_title_subsection",
-				"default" : 				{
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ],
+				"comment" : 				{
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ]
 				}
 ,
-				"comment" : 				{
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+				"default" : 				{
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ],
 					"fontface" : [ 3 ],
 					"fontsize" : [ 15.0 ]
 				}
