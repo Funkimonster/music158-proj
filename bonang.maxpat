@@ -71,7 +71,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ -2.0, 347.0, 82.0, 22.0 ],
 					"style" : "",
-					"text" : "loadmess 0.7"
+					"text" : "loadmess 0.5"
 				}
 
 			}
@@ -89,7 +89,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 66.5, 354.0, 56.0, 22.0 ],
-					"sig" : 0.7,
+					"sig" : 0.5,
 					"style" : ""
 				}
 
