@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1468.0, 713.0 ],
+		"rect" : [ 26.0, 85.0, 1468.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,56 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-77",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 478.0, 544.5, 165.0, 34.0 ],
+					"style" : "",
+					"text" : "^ set to twice as long as you want the melody"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-64",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 126.0, 569.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 174.0, 576.0, 100.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 28.5, 680.5, 137.0, 22.0 ],
+					"style" : "",
+					"text" : "cnmat.o.click~ /duration"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-52",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -58,7 +108,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "bang", "" ],
-					"patching_rect" : [ 41.5, 716.0, 116.0, 20.0 ],
+					"patching_rect" : [ 41.5, 716.0, 358.5, 20.0 ],
 					"style" : "",
 					"text" : "cnmat.o.num~ /duration"
 				}
@@ -86,8 +136,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 387.0, 508.0, 150.0, 32.0 ],
-					"text" : "/duration = 80000"
+					"patching_rect" : [ 387.0, 508.0, 146.0, 32.0 ],
+					"text" : "/duration = 30000"
 				}
 
 			}
@@ -1696,7 +1746,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 757.0, 640.0, 276.0, 75.0 ],
-					"text" : "/line4 : [4, 3, 2, 3, 4, 5, 3, 4],\n/line3 : [6, 4, 5, 6, 3, 2, 1, 0],\n/line2 : [2, 1, 2, 0, 2, 1, 5, 4],\n/line1 : [2, 1, 2, 0, 2, 1, 5, 4]"
+					"text" : "/line4 : [4, 3, 2, 3, 4, 5, 3, 4],\n/line3 : [6, 4, 5, 1, 3, 2, 1, 0],\n/line2 : [2, 1, 2, 0, 2, 1, 5, 4],\n/line1 : [2, 1, 2, 0, 2, 1, 5, 4]"
 				}
 
 			}
@@ -2528,7 +2578,32 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-75", 1 ],
+					"order" : 0,
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"order" : 1,
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
+					"order" : 0,
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"order" : 1,
 					"source" : [ "obj-52", 0 ]
 				}
 
@@ -2743,6 +2818,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"source" : [ "obj-64", 0 ]
 				}
 
 			}
