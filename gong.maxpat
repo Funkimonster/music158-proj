@@ -84,13 +84,11 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-13",
-					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 433.0, 183.0, 149.0, 61.0 ],
-					"text" : "/x : [0, 1],\n/y : [1, 1],\n/count : 1"
+					"patching_rect" : [ 433.0, 183.0, 149.0, 34.0 ]
 				}
 
 			}
@@ -228,7 +226,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 345.0, 38.0, 61.0, 34.0 ],
+					"patching_rect" : [ 360.0, 38.0, 61.0, 34.0 ],
 					"style" : "",
 					"text" : "click duration"
 				}
@@ -237,13 +235,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.5, 377.0, 269.0, 62.0 ],
+					"patching_rect" : [ 298.5, 377.0, 269.0, 34.0 ],
 					"style" : "",
-					"text" : "Rule for the Gong: \nPlay the 4th note of every line\nPlay Big Gong after the last note of the melody (Treat Big Gong as a separate instrument?)"
+					"text" : "Big Gong plays at the beginning and end of the piece"
 				}
 
 			}
@@ -433,10 +431,10 @@
 , 			{
 				"name" : "music+computing_highlight_bright_sz12",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ],
 					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ]
+					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ],
+					"fontface" : [ 1 ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -445,10 +443,10 @@
 , 			{
 				"name" : "music+computing_highlight_dark_sz12",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ],
 					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
+					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ],
+					"fontface" : [ 1 ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -485,9 +483,9 @@
 , 			{
 				"name" : "music+computing_title_section",
 				"default" : 				{
+					"fontname" : [ "Arial Bold Italic" ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 18.0 ],
-					"fontname" : [ "Arial Bold Italic" ]
+					"fontsize" : [ 18.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -496,15 +494,15 @@
 , 			{
 				"name" : "music+computing_title_subsection",
 				"comment" : 				{
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"fontsize" : [ 15.0 ]
 				}
 ,
 				"default" : 				{
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
+					"fontsize" : [ 15.0 ]
 				}
 ,
 				"parentstyle" : "",

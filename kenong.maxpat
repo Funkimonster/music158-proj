@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 759.0, 259.0, 640.0, 480.0 ],
+		"rect" : [ 724.0, 186.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -274,13 +274,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 337.899994, 396.0, 269.0, 75.0 ],
+					"patching_rect" : [ 327.899994, 317.0, 269.0, 62.0 ],
 					"style" : "",
-					"text" : "Rule for the Kenong: \nPlay the 8th note of every line\nPlay p on the odd notes (1, 3, 5, 7)\nPlay t on 2nd and 6th note\ngong in here too"
+					"text" : "Kenong: play the 8th note of every line\nKethuk: Play on 2nd and 6th note of every line\nKempyang: Play on 1st, 3rd, 5th, 7th note\nGong (small): Play the 4th note of every line"
 				}
 
 			}
@@ -420,10 +420,10 @@
 , 			{
 				"name" : "music+computing_highlight_bright_sz12",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ],
 					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ]
+					"textcolor" : [ 0.315808, 0.0, 0.827487, 1.0 ],
+					"fontface" : [ 1 ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -432,10 +432,10 @@
 , 			{
 				"name" : "music+computing_highlight_dark_sz12",
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"fontsize" : [ 12.0 ],
 					"fontname" : [ "Helvetica Neue" ],
-					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ]
+					"textcolor" : [ 0.0, 0.0, 0.501961, 1.0 ],
+					"fontface" : [ 1 ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -472,9 +472,9 @@
 , 			{
 				"name" : "music+computing_title_section",
 				"default" : 				{
+					"fontname" : [ "Arial Bold Italic" ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 18.0 ],
-					"fontname" : [ "Arial Bold Italic" ]
+					"fontsize" : [ 18.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -483,15 +483,15 @@
 , 			{
 				"name" : "music+computing_title_subsection",
 				"comment" : 				{
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"fontsize" : [ 15.0 ]
 				}
 ,
 				"default" : 				{
+					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ],
 					"fontface" : [ 3 ],
-					"fontsize" : [ 15.0 ],
-					"textcolor" : [ 0.120477, 0.600508, 0.784135, 1.0 ]
+					"fontsize" : [ 15.0 ]
 				}
 ,
 				"parentstyle" : "",
